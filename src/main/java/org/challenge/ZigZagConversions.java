@@ -1,14 +1,6 @@
 package org.challenge;
 
-import org.junit.jupiter.api.Assertions;
-
 public class ZigZagConversions {
-
-    public static void main(String[] s) {
-        Assertions.assertEquals("PAHNAPLSIIGYIR", new ZigZagConversions().convert("PAYPALISHIRING", 3));
-        Assertions.assertEquals("PINALSIGYAHRPI", new ZigZagConversions().convert("PAYPALISHIRING", 4));
-        Assertions.assertEquals("A", new ZigZagConversions().convert("A", 1));
-    }
 
     public String convert(String s, int numRows) {
         if(numRows == 1) return s;

@@ -1,17 +1,15 @@
 package org.challenge;
 
-import org.junit.jupiter.api.Assertions;
-
 public class RemoveNthFromTheEndOfTheList {
 
     public static class ListNode {
-        int val;
-        ListNode next;
+        public int val;
+        public ListNode next;
 
         ListNode() {
         }
 
-        ListNode(int val) {
+        public ListNode(int val) {
             this.val = val;
         }
 
@@ -46,16 +44,5 @@ public class RemoveNthFromTheEndOfTheList {
         previous.next = toDelete.next;
 
         return head;
-    }
-
-    public static void main(String[] args) {
-        ListNode head = new ListNode(1);
-        head.next = new ListNode(2);
-        head.next.next = new ListNode(3);
-
-        ListNode result = new RemoveNthFromTheEndOfTheList().removeNthFromEnd(head, 2);
-
-        Assertions.assertEquals(1, result.val);
-        Assertions.assertEquals(3, result.next.val);
     }
 }

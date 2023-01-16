@@ -1,17 +1,10 @@
 package org.challenge;
 
-import org.junit.jupiter.api.Assertions;
-
 import java.util.ArrayList;
 
 public class AddTwoNumbers {
 
-    public static void main(String[] s) {
-        Assertions.assertArrayEquals(new int[]{7, 0, 8}, toArray(new AddTwoNumbers().addTwoNumbers(prepare(new int[]{2, 4, 3}), prepare(new int[]{5, 6, 4}))));
-        Assertions.assertArrayEquals(new int[]{8, 9, 9, 9, 0, 0, 0, 1}, toArray(new AddTwoNumbers().addTwoNumbers(prepare(new int[]{9, 9, 9, 9, 9, 9, 9}), prepare(new int[]{9, 9, 9, 9}))));
-    }
-
-    private static int[] toArray(ListNode node) {
+    public static int[] toArray(ListNode node) {
         ArrayList<Integer> list = new ArrayList<>();
         do {
             list.add(node.val);
@@ -51,7 +44,7 @@ public class AddTwoNumbers {
         return head;
     }
 
-    private static ListNode prepare(int[] input) {
+    public static ListNode prepare(int[] input) {
         ListNode head = new ListNode();
         ListNode current = head;
         for (int i = 0; i < input.length; ++i) {

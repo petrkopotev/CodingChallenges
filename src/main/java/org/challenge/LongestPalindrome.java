@@ -1,15 +1,6 @@
 package org.challenge;
 
-import org.junit.jupiter.api.Assertions;
-
 public class LongestPalindrome {
-
-    public static void main(String[] s) {
-        Assertions.assertEquals("bab", new LongestPalindrome().longestPalindrome("babad"));
-        Assertions.assertEquals("bb", new LongestPalindrome().longestPalindrome("cbbd"));
-        Assertions.assertEquals("a", new LongestPalindrome().longestPalindrome("a"));
-        Assertions.assertEquals("a", new LongestPalindrome().longestPalindrome("ac"));
-    }
 
     public String longestPalindrome(String s) {
         if (s.isEmpty()) return "";

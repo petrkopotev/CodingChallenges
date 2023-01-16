@@ -1,7 +1,5 @@
 package org.challenge;
 
-import org.junit.jupiter.api.Assertions;
-
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -9,12 +7,6 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class TwoSum {
-
-    public static void main(String[] s) {
-        Assertions.assertArrayEquals(new int[]{0, 1}, new TwoSum().twoSum(new int[]{2, 7, 11, 15}, 9));
-        Assertions.assertArrayEquals(new int[]{1, 2}, new TwoSum().twoSum(new int[]{3,2,4}, 6));
-        Assertions.assertArrayEquals(new int[]{0, 1}, new TwoSum().twoSum(new int[]{3, 3}, 6));
-    }
 
     public int[] twoSum(int[] nums, int target) {
 

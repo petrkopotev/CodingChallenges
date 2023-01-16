@@ -1,7 +1,5 @@
 package org.challenge;
 
-import org.junit.jupiter.api.Assertions;
-
 import java.util.*;
 
 public class PhoneLetterCombination {
@@ -38,9 +36,5 @@ public class PhoneLetterCombination {
         }
 
         return letterCombinations("", digits, 0);
-    }
-
-    public static void main(String[] args) {
-        Assertions.assertEquals(27, new PhoneLetterCombination().letterCombinations("234").size());
     }
 }
